@@ -442,7 +442,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bull: {fileID: 4050023638511518742, guid: dc23e2970f70d7d429865b271d0075bb, type: 3}
   _gun: {fileID: 196478993}
-  rocketFireParticle: {fileID: 7477713037194014442, guid: 91d272883f8bb4d4fa129281c22c1988, type: 3}
+  rocketFireParticle: {fileID: 1315728944}
   speed: 5
 --- !u!212 &899023495
 SpriteRenderer:
@@ -693,7 +693,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -702,6 +702,11 @@ CircleCollider2D:
 --- !u!4 &1315728942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7477713037194014441, guid: 91d272883f8bb4d4fa129281c22c1988, type: 3}
+  m_PrefabInstance: {fileID: 1656482954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1315728944 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7477713037194014440, guid: 91d272883f8bb4d4fa129281c22c1988, type: 3}
   m_PrefabInstance: {fileID: 1656482954}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1656482954

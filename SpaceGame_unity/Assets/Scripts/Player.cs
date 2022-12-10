@@ -6,7 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] GameObject _bull;
     [SerializeField] GameObject _gun;
-    [SerializeField] GameObject rocketFireParticle;
+    [SerializeField] ParticleSystem rocketFireParticle;
     Rigidbody2D p_rb;
     public float speed;
     private Vector2 currentDirection;
@@ -32,11 +32,11 @@ public class Player : MonoBehaviour
         {
             currentDirection = GetMoveDirectionVector(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             RBMove(currentDirection);
-            rocketFireParticle.GetComponent<ParticleSystem>().emissionRate = 250;
+            rocketFireParticle.Play();
         }
         else
         {
-            rocketFireParticle.GetComponent<ParticleSystem>().emissionRate = 0;
+            rocketFireParticle.Stop();
         }
     }
     private void checkPosInRange()
